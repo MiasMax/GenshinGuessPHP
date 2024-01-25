@@ -1,0 +1,192 @@
+
+@font-face {
+	font-family: lastninja; 
+	src: url('../font/lastninja.ttf');
+} 
+
+@keyframes float{
+  50%{
+    transform: translateY(15px);
+  }
+}
+@keyframes taadaa{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes taadaa2{
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
+  }
+}
+.sign{
+  text-decoration: none;
+  color : white;
+	text-align: center;
+	font-family: lastninja;
+  font-size: 120%;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+
+}
+p,form{
+  color : rgb(230, 230, 230);
+  text-align: center;
+	font-size: 100%;
+ }
+
+/*Définie le titre h1 "Chose your genshin game"*/
+h1{
+	color : white;
+	text-align: center;
+	font-family: lastninja;
+	font-size: 400%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/*Définie le titre h2 "Genshin Guess"*/
+h2{
+	color : white;
+  text-align: center;
+	margin-top : 2%;
+	font-family: lastninja;
+	font-size: 170%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.container {
+  padding: 16px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}.login{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+
+body{
+	background-image: url('../img/fond4.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.accueil h1,h2,p,form{
+	text-align: center;
+}
+
+
+.accueil h1{
+	color : white;
+	margin-top : 3%;
+	font-family: lastninja;
+	font-size: 400%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.accueil h2{
+	color : white;
+	margin-top : 8%;
+	font-family: lastninja;
+	font-size: 300%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+  border: solid white;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: white;
+  border: solid DodgerBlue ;
+  transition: 1s;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: DodgerBlue;
+  transition: 1s;
+}
+
+
+.accueil img{
+  animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+  border: solid DodgerBlue ;
+  border-width: 1em;
+  left: 15%;
+  top: 55%;
+  border-radius: 35px;
+  position: absolute;
+  width : 70%; 
+  height : 30%; 
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  .accueil img{
+    animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+    border: solid DodgerBlue ;
+    border-width: 1em;
+    left: 55%;
+    top: 30%;
+    border-radius: 35px;
+    position: absolute;
+    width : 30%; 
+    height : 32%; 
+  }
+}
+
+
+/*for the dislamer*/
+.DISCLAMER p{
+	color : rgb(255, 126, 126);
+  font-size: 20px;
+  margin-top: 0%;
+}
+.DISCLAMER .D{
+	color : rgb(141, 0, 0);
+  font-size: 30px;
+  
+  margin-bottom: 0%;
+}
+  

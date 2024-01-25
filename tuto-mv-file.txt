@@ -1,0 +1,17 @@
+rm -d -r /var/www/gci/*
+sudo mv miaserv-share/site-a-copier/* /var/www/gci
+sudo mv /var/www/gci miaserv-share/site-a-copier/*
+
+
+
+rm /var/www/gci/php/action.php && sudo mv miaserv-share/site-a-copier/action.php /var/www/gci/php && sudo systemctl restart apache2
+rm /var/www/gci/javascript/login.js && sudo mv miaserv-share/site-a-copier/login.js /var/www/gci/javascript && sudo systemctl restart apache2
+rm /var/www/gci/login.html && sudo mv miaserv-share/site-a-copier/login.html /var/www/gci && sudo systemctl restart apache2
+
+sudo mv miaserv-share/site-a-copier/indexlogin.php /var/www/gci/php && sudo systemctl restart apache2
+
+sudo rm -d -r /var/www/gci/* && sudo mv miaserv-share/site-a-copier/* /var/www/gci && sudo systemctl restart apache2
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/self-signed.key -out /etc/ssl/certs/self-signed.crt
+
+sudo certbot --apache --http-01-port 8080 -d genshinguess.com

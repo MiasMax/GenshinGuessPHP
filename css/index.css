@@ -1,0 +1,168 @@
+/*Font pour le titre*/
+@font-face {
+	font-family: lastninja; 
+	src: url('../font/lastninja.ttf');
+} 
+/*Image des différent mode de jeux*/
+@keyframes float{
+  50%{
+    transform: translateY(15px);
+  }
+}
+@keyframes taadaa{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes taadaa2{
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
+  }
+}
+/*image des différent mode de jeux en mode mobile*/
+.accueil .guess img{
+  animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+  border: solid DodgerBlue ;
+  border-width: 1em;
+  left: 15%;
+  top: 55%;
+  border-radius: 35px;
+  position: absolute;
+  width : 70%; 
+  height : 30%; 
+}
+.accueil .chess img{
+  animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+  border: solid DodgerBlue ;
+  border-width: 1em;
+  left: 15%;
+  top: 55%;
+  border-radius: 35px;
+  position: absolute;
+  width : 70%; 
+  height : 30%; 
+}
+
+.chess {
+  visibility: hidden;
+}
+/*image des différent mode de jeux en mode PC*/
+
+@media only screen and (min-width: 1200px) {
+  .chess{
+    visibility: visible;
+  }
+
+  .accueil .guess img{
+    animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+    border: solid DodgerBlue ;
+    border-width: 1em;
+    left: 55%;
+    top: 30%;
+    border-radius: 35px;
+    position: absolute;
+    width : 30%; 
+    height : 32%; 
+  }
+
+  .accueil .chess img{
+    animation:taadaa 2s forwards, float 3s ease-in-out infinite;
+    border: solid DodgerBlue ;
+    border-width: 1em;
+    left: 55%;
+    top: 60%;
+    border-radius: 35px;
+    position: absolute;
+    width : 20%; 
+    height : 32%; 
+  }
+}
+
+/*Background image*/
+body{
+	background-image: url('../img/fond4.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  margin-top: 60px; 
+}
+
+/*Centre le text pour h1 h2 p et form*/
+p,form{
+	text-align: center;
+}
+
+/*Définie le titre h1 "Chose your genshin game"*/
+h1{
+	color : white;
+	text-align: center;
+	font-family: lastninja;
+	font-size: 400%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/*Définie le titre h2 "Genshin Guess"*/
+h2{
+	color : white;
+  text-align: center;
+	margin-top : 8%;
+	font-family: lastninja;
+	font-size: 300%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/*Définie les inputs*/
+input{
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+/*Définie les inputs de type submit*/
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: white;
+  border: solid DodgerBlue ;
+  transition: 1s;
+}
+/*Définie les inputs de type submit quand on vas dessus*/
+input[type=submit]:hover {
+  background-color: white;
+  color: DodgerBlue;
+  transition: 1s;
+}
+/*Définie la bar de navigation*/
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff00;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+/*Définie les élements dans la bar de nav*/
+.navbar a {
+  float: right;
+  display: block;
+  color: #ddedf0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#profil{
+	margin-top:10px;
+	margin-left:2%;
+	padding: 10px;
+	float: left;
+	font-size: 150%;
+	font-family: lastninja;
+}
+  

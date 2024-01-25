@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>GENSHIN DLE</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="icon" type="img/png" sizes="16x16" href="img/logo.png">
+        <script type="text/javascript" src="javascript/signup.js"></script>
+
+    </head>
+    <body>   
+        <div class="login" id="login">
+          
+            <form method="post" action="" onsubmit="validateMyForm()" id="form">
+                <div class="container">
+                  <h1>Sign Up</h1>
+                  <h2>Please fill in this form to create an account.</h2>
+                  <hr>
+
+                  <label for="username"><b>Username</b></label>
+                  <input type="text" placeholder="Enter name" name="username" id="username" required>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                  <hr>
+                  <div class="DISCLAMER">
+                    <p class="D">DISCLAIMER:</p>
+                    <p>DO NOT INCLUDE YOUR REAL PASSWORDS. IT WILL NOT BE SCRIPTED.</p>
+                  </div>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+              
+                <div class="container signin">
+                  <p>Already have an account? <a href="login.html" class="sign">log in</a>.</p>
+                </div>
+                
+              </form>
+              
+              <form action="index.php"><input class="return" type="submit" value="Return to Menu"></form>  <!--pour return au menu-->
+        </div>
+    </body>
+</html>

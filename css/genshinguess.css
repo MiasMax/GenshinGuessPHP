@@ -1,0 +1,509 @@
+*{
+	margin : 0;
+}
+
+@font-face {
+	font-family: lastninja; 
+	src: url('../font/lastninja.ttf');
+} 
+
+body{
+	background-image: url('../img/fond4.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.accueil h1,p,h2{
+	text-align: center;
+}
+.accueil{
+	padding: 80px 3px 3px 3px;
+}
+@media only screen and (min-width: 1200px) {
+	.accueil{
+		padding: 30px 3px 3px 3px;
+	}
+}
+.accueil h1{
+	color : white;
+	margin-top : 3%;
+	font-family: lastninja;
+	font-size: 400%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.accueil h2{
+	color : white;
+	margin-top : 3%;
+	font-family: lastninja;
+	font-size: 200%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.accueil p{
+	color : white;
+	margin-top: 2%;
+	font-family: Consolas;
+	font-size: 20px;
+	text-shadow: 0 0 10px black;
+}
+
+.accueil img{
+	margin: auto;
+	align-items : center;
+	display: inline;
+}
+
+.jeu {
+	margin: auto;
+	align-items : center;
+	display: inline;
+}
+
+.categorie {
+	width: 75%;
+
+	margin-top: 3%;
+	display: grid;
+	/*margin: auto;*/
+	margin-left: 8%;
+	grid-template-columns: repeat(8, 13%);
+	grid-template-rows: 50%;
+	align-items : center;
+}
+
+.categorie h3{
+	text-align: center;
+	color: white;
+	font-size: 140%;
+	font-family: sans-serif;
+	margin: 1vw;
+	text-shadow: 0 0 10px black;
+}
+
+.ListeGuess{
+	width: 75%;
+	margin-left: 8%;
+	margin-top: 1%;
+	display: grid;
+	grid-template-columns: repeat(8, 13%);
+	align-items : center;
+}
+
+.box{
+	text-align: center;
+	margin: 10px;
+	box-sizing: content-box;
+	width: 8.35vW;
+  	height: 8.35vW;
+  	overflow: hidden;
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 5px white, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #141414, 5px 5px 15px 5px rgba(0,0,0,0);
+	border-radius: 1px;
+}
+
+ .box h2{
+ 	padding: 40% 0;
+ 	color : white;
+ 	font-family: sans-serif;
+ 	font-size: 20px;
+ 	text-shadow: 0 0 10px black;
+ 	animation: 1s boxes;
+ }
+
+ .box img {
+	display: block;
+	margin: auto;
+	width: 100%;
+  }
+
+.GiveUp input{
+	margin-left: 2%;
+}
+
+.button{
+	margin-top: 0.5%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonGiveUp{
+	margin-left: 0.5%;
+}
+
+.GiveUp{
+	text-align: center;
+	color: white;
+	font-size: 140%;
+	font-family: sans-serif;
+	margin: 1vw;
+	text-shadow: 0 0 10px black;
+}
+/*
+.resetclear{
+	margin-left: 0.5%;
+}
+*/
+
+.button form{
+	margin-right: 0.5%;
+}
+
+.versionimg{
+	position: relative;
+}
+
+.version{
+	color:rgb(255, 255, 255);
+	font-family: sans-serif;
+	font-size: 20px;
+	text-shadow: 0 0 10px black;
+	position: absolute;
+	top: 40%;
+	left: 38%;
+}
+
+
+.rep form{
+	display: flex;
+	flex-direction: row;
+}
+
+.rep{
+	margin-top: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+  border: solid white;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: white;
+  border: solid DodgerBlue ;
+  transition: 1s;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: DodgerBlue;
+  transition: 1s;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  font-family: sans-serif;
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+ .navbar {
+	overflow: hidden;
+	background-color: #ffffff00;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+  }
+  /*Définie les élements dans la bar de nav*/
+  .navbar a {
+	float: right;
+	display: block;
+	color: #ddedf0;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  #profil{
+	  margin-top:10px;
+	  margin-left:2%;
+	  padding: 10px;
+	  float: left;
+	  font-size: 150%;
+	  font-family: lastninja;
+  }
+
+
+
+  .leaderboard{
+	position: absolute;
+	top: 10%; left: 5%;
+	width: 12%;
+	height: auto;
+	/*border: 2px dotted;*/
+}
+
+@media only screen and (min-width: 1200px) {
+	.leaderboard{
+		position: absolute;
+		top: 10%; left: 5%;
+		width: 12%;
+		height: auto;
+		/*border: 2px dotted;*/
+	}
+}
+
+
+
+.leaderboardvisible{
+	display: flex;
+}
+
+#plus{
+	background-color: transparent;
+	border: none;
+}
+
+.mult{
+	-webkit-animation: rotate-45-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-45-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.plus{
+	-webkit-animation: rotate-neg45-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: rotate-neg45-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.leaderboardtext{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	width: 100%;
+	color : rgb(228, 235, 235);
+	font-family: lastninja;
+	font-size: 100%;
+	text-shadow: 0 1px 0 #CCCCCC, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+
+}
+.slide-in-left{
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-in-leftreturn{
+	-webkit-animation: slide-in-leftreturn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-in-leftreturn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+.slide-in-start{
+	visibility: hidden;
+}
+.mec1,.mec2,.mec3{
+	
+	display: flex;
+
+	margin-top : 6%;
+}
+
+.mec1 p,.mec2 p,.mec3 p{
+	display: flex;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	color : white;
+	font-size: 150%;
+}
+.mec1 img,.mec2 img,.mec3 img{
+	width: 20%;
+	height: auto;
+	margin-left: auto;
+	margin-right: 3%;
+}
+#plus img{
+	width: 50px;
+	height: auto;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-24 17:15:12
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+	0% {
+	  -webkit-transform: translateX(-1000px);
+			  transform: translateX(-1000px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes slide-in-left {
+	0% {
+	  -webkit-transform: translateX(-1000px);
+			  transform: translateX(-1000px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-24 17:16:8
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-leftreturn {
+	0% {
+	  -webkit-transform: translateX(-1000px);
+			  transform: translateX(-1000px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes slide-in-leftreturn {
+	0% {
+	  -webkit-transform: translateX(-1000px);
+			  transform: translateX(-1000px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-24 17:4:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-cw
+ * ----------------------------------------
+ */
+ @-webkit-keyframes rotate-neg45-cw {
+	0% {
+	  -webkit-transform: rotate(45deg);
+			  transform: rotate(45deg);
+	}
+	100% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+  }
+  @keyframes rotate-neg45-cw {
+	0% {
+	  -webkit-transform: rotate(45deg);
+			  transform: rotate(45deg);
+	}
+	100% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2023-9-24 17:4:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-cw
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-45-cw {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(45deg);
+			  transform: rotate(45deg);
+	}
+  }
+  @keyframes rotate-45-cw {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(45deg);
+			  transform: rotate(45deg);
+	}
+  }
